@@ -1,0 +1,18 @@
+cd $BUILDSPACE/
+cd integrate
+./setenv.sh proj=stuttgart uboot=../bootable/bootloader/uboot/ kernel=../kernel app=../ cp=../Sam6260
+cd $BUILDSPACE
+
+source ./build/envsetup.sh
+lunch stuttgart-eng 
+
+cd intergrate
+
+make all
+
+kernel
+======
+make kernel
+
+======
+Contact Lenovo support for information on obtaining Open Source code.
